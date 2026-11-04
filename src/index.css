@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #0d9488;
+  --color-brand-dark: #0f766e;
+  --color-brand-soft: #ccfbf1;
+  --color-sky-bg: #f0f9ff;
+  --color-line: #bae6fd;
+  --color-gold: #f5b82e;
+  --color-gold-dark: #b7791f;
+  --color-gold-soft: #fef3c7;
+  --color-ink: #134e4a;
+  --color-muted: #4b7a78;
+  --color-danger: #be123c;
+  --color-danger-soft: #ffe4e6;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-sky-bg text-ink antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Fokus yang jelas dan konsisten (aksesibilitas) */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
