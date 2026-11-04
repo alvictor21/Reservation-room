@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { getSession, saveSession, clearSession } from "./utils/auth";
 
